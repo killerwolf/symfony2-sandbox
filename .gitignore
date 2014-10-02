@@ -9,3 +9,5 @@ application/app/logs/*
 !application/app/logs/.gitkeep
 
 application/vendor/
+
+ansible/roles/resmo.ntp
