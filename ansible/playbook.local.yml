@@ -1,0 +1,8 @@
+---
+  - hosts: 127.0.0.1
+    connection: local
+    gather_facts: False
+    tasks:
+    - command: ansible-galaxy install --role-file=requirements.txt --roles-path=roles --force
+      sudo: false
+  - include: playbook.yml

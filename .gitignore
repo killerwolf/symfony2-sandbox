@@ -1,0 +1,11 @@
+.vagrant/
+
+application/web/bundles/
+
+application/app/cache/*
+application/app/logs/*
+
+!application/app/cache/.gitkeep
+!application/app/logs/.gitkeep
+
+application/vendor/

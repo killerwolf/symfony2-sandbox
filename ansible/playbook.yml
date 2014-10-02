@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: true
+  roles:
+    - init
+    - php
+    - nginx
+    - sf2

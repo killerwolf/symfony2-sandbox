@@ -1,0 +1,13 @@
+---
+   - name: img vhost setup
+     template: src='sf2.conf' dest='/etc/nginx/sites-available'
+
+   - name: img vhost enabled
+     file: src=/etc/nginx/sites-available/sf2.conf dest=/etc/nginx/sites-enabled/sf2.conf state=link
+     notify: restart nginx
+
+   - name: composer install
+     command: php composer.phar install
+     changed_when: False
+     args:
+       chdir: /var/www/symfony2-sandbox
