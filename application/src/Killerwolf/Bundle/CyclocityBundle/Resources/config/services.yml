@@ -1,0 +1,4 @@
+services:
+#    killerwolf_cyclocity.example:
+#        class: Killerwolf\Bundle\CyclocityBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

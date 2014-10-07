@@ -1,0 +1,4 @@
+killerwolf_cyclocity:
+    resource: "@KillerwolfCyclocityBundle/Resources/config/routing.yml"
+    prefix:   /
+
