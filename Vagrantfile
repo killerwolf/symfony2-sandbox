@@ -18,9 +18,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "symfony2-sandbox" do |sf2|
   end
 
-  config.hostsupdater.remove_on_suspend = true
   config.vm.hostname = "symfony2-sandbox.dev"
-  config.hostsupdater.aliases = ["api.symfony2-sandbox.dev"]
+
+  config.hostmanager.enabled = true
+  config.hostmanager.manage_host = true
+  config.hostmanager.include_offline = true
+
+  config.vm.provision :hostmanager
 
   config.vm.provision "ansible" do |ansible|
     ansible.limit= "all"
