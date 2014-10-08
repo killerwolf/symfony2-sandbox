@@ -3,6 +3,8 @@
   sudo: true
   roles:
     - init
+    - resmo.ntp
+    - ANXS.mysql
     - php
     - nginx
     - sf2

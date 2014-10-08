@@ -1,6 +1,7 @@
 .vagrant/
 
 ansible/roles/resmo.ntp
+ansible/roles/ANXS.mysql
 
 application/web/bundles/
 application/app/bootstrap.php.cache
