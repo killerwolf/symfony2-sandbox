@@ -27,8 +27,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :hostmanager
 
   config.vm.provision "ansible" do |ansible|
-    ansible.limit= "all"
     ansible.playbook = "ansible/playbook.local.yml"
+  end
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.limit= "all"
+    ansible.playbook = "ansible/playbook.yml"
   end
 
   config.vm.synced_folder "./application", "/var/www/symfony2-sandbox/", :mount_options => [ "dmode=775", "fmode=664" ], :owner => 'www-data', :group => 'vagrant'

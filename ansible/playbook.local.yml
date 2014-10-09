@@ -5,4 +5,3 @@
     tasks:
     - command: ansible-galaxy install --role-file=requirements.txt --roles-path=roles --force
       sudo: false
-  - include: playbook.yml
