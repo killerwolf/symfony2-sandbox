@@ -1,6 +1,6 @@
 <?php
 
-namespace Killerwolf\Bundle\CyclocityBundle\Tests\Controller;
+namespace Killerwolf\JCDecauxCyclocityBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

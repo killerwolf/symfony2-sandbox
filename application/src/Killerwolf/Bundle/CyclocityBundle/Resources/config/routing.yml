@@ -1,3 +1,0 @@
-killerwolf_cyclocity_homepage:
-    path:     /hello2/{name}
-    defaults: { _controller: KillerwolfCyclocityBundle:Default:index }
