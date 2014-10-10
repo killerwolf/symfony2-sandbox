@@ -1,13 +1,22 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "killerwolf/symfony2-sanbox",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "The \"Symfony Standard Edition\" distribution with vagrant/ansible nginx/php5-fpm stack",
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:killerwolf/JCDecauxCyclocityBundle.git"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
+
+        "killerwolf/jcdecauxcyclocity-bundle": "dev-master",
+
         "symfony/symfony": "2.5.*",
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
