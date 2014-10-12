@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f5bf28fac35560dbdb2e597d32df056",
+    "hash": "5d0380079c701197eb91506a8afba177",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -545,16 +545,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.5",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0"
+                "reference": "bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
-                "reference": "c0d3cdbdfbf873871167050ab077e49b1ad02ab0",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9",
+                "reference": "bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9",
                 "shasum": ""
             },
             "require": {
@@ -614,7 +614,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-09-22 21:58:51"
+            "time": "2014-10-06 13:22:50"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -717,6 +717,89 @@
                 "sql"
             ],
             "time": "2014-01-12 16:20:24"
+        },
+        {
+            "name": "killerwolf/jcdecauxcyclocity-bundle",
+            "version": "dev-master",
+            "target-dir": "Killerwolf/JCDecauxCyclocityBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/killerwolf/JCDecauxCyclocityBundle.git",
+                "reference": "77bec9c7212091f0de9c3de5dc13e4b971410085"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/killerwolf/JCDecauxCyclocityBundle/zipball/77bec9c7212091f0de9c3de5dc13e4b971410085",
+                "reference": "77bec9c7212091f0de9c3de5dc13e4b971410085",
+                "shasum": ""
+            },
+            "require": {
+                "killerwolf/jcdodatawrapper": "~0.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Killerwolf\\JCDecauxCyclocityBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hamdi LAADHARI",
+                    "email": "killerwolf06@gmail.com"
+                }
+            ],
+            "description": "this bundle provides easy integration of the Cyclocity OpenData Rest API provided by JCDecaux",
+            "support": {
+                "source": "https://github.com/killerwolf/JCDecauxCyclocityBundle/tree/master",
+                "issues": "https://github.com/killerwolf/JCDecauxCyclocityBundle/issues"
+            },
+            "time": "2014-10-10 19:38:00"
+        },
+        {
+            "name": "killerwolf/jcdodatawrapper",
+            "version": "v0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/killerwolf/JCDODataWrapper.git",
+                "reference": "9e1220f398ed63dd00c92a3e955606719e40632d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/killerwolf/JCDODataWrapper/zipball/9e1220f398ed63dd00c92a3e955606719e40632d",
+                "reference": "9e1220f398ed63dd00c92a3e955606719e40632d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.5.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "suggest": {
+                "lib-curl": "Query the API with curl instead of php regular fopen function"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JCDodatawrapper": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Hamdi LAADHARI",
+                    "email": "killerwolf06@gmail.com",
+                    "homepage": "http://www.h4md1.fr",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP class wrapper to query JCDECAUX/VLS Open Data Rest API",
+            "homepage": "https://github.com/killerwolf/JCDODataWrapper",
+            "time": "2014-09-17 14:18:40"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -1054,20 +1137,20 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.2.2",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1"
+                "reference": "b86b927dfefdb56ab0b22d1350033d9a38e9f205"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/e02f71a35436af4bd58a1bd90116089e632e29e1",
-                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/b86b927dfefdb56ab0b22d1350033d9a38e9f205",
+                "reference": "b86b927dfefdb56ab0b22d1350033d9a38e9f205",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.4"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.1"
@@ -1075,7 +1158,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.2-dev"
+                    "dev-master": "5.3-dev"
                 }
             },
             "autoload": {
@@ -1102,7 +1185,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-09-20 07:17:36"
+            "time": "2014-10-04 05:53:18"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -1496,16 +1579,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.16.0",
+            "version": "v1.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "8ce37115802e257a984a82d38254884085060024"
+                "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/8ce37115802e257a984a82d38254884085060024",
-                "reference": "8ce37115802e257a984a82d38254884085060024",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7c4c01dcf578523cfcddf383641a4f12790270ec",
+                "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec",
                 "shasum": ""
             },
             "require": {
@@ -1549,7 +1632,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-07-05 12:19:05"
+            "time": "2014-10-10 14:09:53"
         }
     ],
     "packages-dev": [
@@ -1604,7 +1687,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "killerwolf/jcdecauxcyclocity-bundle": 20
+    },
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.3"

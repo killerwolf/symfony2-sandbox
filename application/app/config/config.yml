@@ -70,3 +70,6 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+killerwolf_jc_decaux_cyclocity:
+    api_key: "3b195bafb4926f79caa31eac82b5236afebc27d3"

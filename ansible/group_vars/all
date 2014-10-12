@@ -1,2 +1,13 @@
+---
 init_timezone: 'Europe/Paris'
 ntp_config_server: [2.ubuntu.pool.ntp.org, 1.ubuntu.pool.ntp.org]
+
+mysql_root_password: 'root'
+mysql_databases:
+  - name: symfony
+# List of users to be created (optional)
+mysql_users:
+  - name: symfony
+    pass: symfony
+    priv: "*.*:ALL"                     # optional, defaults to "*.*:ALL"
+    host: "%"                           # optional, defaults to "localhost"

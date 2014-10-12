@@ -1,13 +1,18 @@
 .vagrant/
 
-application/web/bundles/
+ansible/roles/resmo.ntp
+ansible/roles/ANXS.mysql
 
+application/web/bundles/
+application/app/bootstrap.php.cache
 application/app/cache/*
+application/app/config/parameters.yml
 application/app/logs/*
 
 !application/app/cache/.gitkeep
 !application/app/logs/.gitkeep
 
+application/build/
 application/vendor/
-
-ansible/roles/resmo.ntp
+application/bin/
+/nbproject/*
