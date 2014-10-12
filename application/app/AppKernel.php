@@ -8,8 +8,6 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            new Killerwolf\JCDecauxCyclocityBundle\KillerwolfJCDecauxCyclocityBundle(),
-            
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
