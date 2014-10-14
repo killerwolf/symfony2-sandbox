@@ -20,14 +20,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.hostname = "symfony2-sandbox.dev"
 
-  config.hostmanager.enabled = true
-  config.hostmanager.manage_host = true
-  config.hostmanager.include_offline = true
-
-  config.vm.provision :hostmanager
-
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "ansible/playbook.local.yml"
+    ansible.tags = "pre-local"
   end
 
   config.vm.provision "ansible" do |ansible|
@@ -35,6 +30,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.playbook = "ansible/playbook.yml"
   end
 
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "ansible/playbook.local.yml"
+    ansible.tags = "post-local"
+  end
   config.vm.synced_folder "./application", "/var/www/symfony2-sandbox/", :mount_options => [ "dmode=775", "fmode=664" ], :owner => 'www-data', :group => 'vagrant'
 
 end
