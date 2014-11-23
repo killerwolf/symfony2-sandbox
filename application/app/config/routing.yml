@@ -1,4 +1,0 @@
-killerwolf_jc_decaux_cyclocity:
-    resource: "@KillerwolfJCDecauxCyclocityBundle/Resources/config/routing.xml"
-    prefix:   /
-

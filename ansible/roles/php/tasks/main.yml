@@ -8,7 +8,6 @@
     action: apt name={{ item }} state=latest
     with_items:
        - php5-fpm
-       - php5
 
   - name: php module install
     action: apt name={{ item }} state=latest
