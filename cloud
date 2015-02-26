@@ -1,0 +1,1 @@
+jumper ansible_ssh_host=212.47.228.179 ansible_ssh_user=ubuntu

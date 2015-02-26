@@ -9,7 +9,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:killerwolf/JCDecauxCyclocityBundle.git"
+            "url": "git@github.com:killerwolf/H4md1JsqueezeBundle.git"
         }
     ],
     "require": {
@@ -23,7 +23,8 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "h4md1/jsqueeze-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

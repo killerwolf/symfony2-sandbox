@@ -1,0 +1,4 @@
+h4md1_j_squeeze:
+    resource: "@H4md1JsqueezeBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fce74d8762a5ce9fe0ac09a4277aee2b",
+    "hash": "572221f1bfbb829f9ac9b2470f5b809a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -719,6 +719,42 @@
             "time": "2014-12-16 13:45:01"
         },
         {
+            "name": "h4md1/jsqueeze-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/killerwolf/H4md1JsqueezeBundle.git",
+                "reference": "0f9c6f781e8e67382e30c00741e9a0b214746bd5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/killerwolf/H4md1JsqueezeBundle/zipball/0f9c6f781e8e67382e30c00741e9a0b214746bd5",
+                "reference": "0f9c6f781e8e67382e30c00741e9a0b214746bd5",
+                "shasum": ""
+            },
+            "require": {
+                "patchwork/jsqueeze": "~2.0",
+                "symfony/twig-bundle": "~2.5"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "H4md1\\JsqueezeBundle\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Hamdi LAADHARI",
+                    "email": "killerwolf06@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/killerwolf/H4md1JsqueezeBundle/tree/master",
+                "issues": "https://github.com/killerwolf/H4md1JsqueezeBundle/issues"
+            },
+            "time": "2015-01-30 08:44:44"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.0",
             "target-dir": "Incenteev/ParameterHandler",
@@ -965,6 +1001,53 @@
                 "psr-3"
             ],
             "time": "2014-12-29 21:29:35"
+        },
+        {
+            "name": "patchwork/jsqueeze",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tchwork/jsqueeze.git",
+                "reference": "70a8167daf0e2d5522d5d77a11e3a7d6753683ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tchwork/jsqueeze/zipball/70a8167daf0e2d5522d5d77a11e3a7d6753683ce",
+                "reference": "70a8167daf0e2d5522d5d77a11e3a7d6753683ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Patchwork\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Efficient JavaScript minification in PHP",
+            "homepage": "https://github.com/tchwork/jsqueeze",
+            "keywords": [
+                "compression",
+                "javascript",
+                "minification"
+            ],
+            "time": "2015-01-01 10:47:37"
         },
         {
             "name": "psr/log",
@@ -1668,7 +1751,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "h4md1/jsqueeze-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
