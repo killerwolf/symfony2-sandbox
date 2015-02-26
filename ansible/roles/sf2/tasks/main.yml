@@ -1,9 +1,9 @@
 ---
    - name: img vhost setup
-     template: src='sf2.conf' dest='/etc/nginx/sites-available'
+     template: src='sf2.conf' dest='/etc/nginx/sites-available/sf2'
 
    - name: img vhost enabled
-     file: src=/etc/nginx/sites-available/sf2.conf dest=/etc/nginx/sites-enabled/sf2.conf state=link
+     file: src=/etc/nginx/sites-available/sf2 dest=/etc/nginx/sites-enabled/sf2 state=link
      notify: restart nginx
 
    - name: composer install
