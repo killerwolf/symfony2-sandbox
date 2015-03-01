@@ -4,6 +4,14 @@
 
 {% block content %}
     <h1>Hello {{ name }}!</h1>
+    <script>{% jsqueeze %}
+    	console.log('je suis la');
+    	var v = "zool {{ name }}";
+    	(function(str){
+    		console.log('plop'+str);
+    		console.log(v);
+    	})('yahoo',v);
+    {% endjsqueeze %}</script>
 {% endblock %}
 
 {% set code = code(_self) %}
