@@ -19,6 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.hostname = "symfony2-sandbox.dev"
+  config.dnsmasq.domain = 'symfony2-sandbox.dev'
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "ansible/playbook.local.yml"
@@ -35,6 +36,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.tags = "post-local"
   end
   config.vm.synced_folder "./application", "/var/www/symfony2-sandbox/", :mount_options => [ "dmode=775", "fmode=664" ], :owner => 'www-data', :group => 'vagrant'
+
+  config.dnsmasq.dnsmasqconf = '/usr/local/etc/dnsmasq.conf'
+  config.dnsmasq.reload_command = 'sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist; sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist'
 
 end
 
