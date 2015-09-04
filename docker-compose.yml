@@ -1,0 +1,18 @@
+web:
+  image: nginx
+  volumes:
+   - application/:/var/www/symfony2-sandbox
+   - ansible/roles/sf2/templates/sf2.conf:/etc/nginx/conf.d/sf2.conf
+  links:
+   - sf2db
+   - sf2php
+  ports:
+   - "80:80"
+sf2db:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+sf2php:
+  volumes:
+   - application/:/var/www/symfony2-sandbox
+  image: php:fpm
